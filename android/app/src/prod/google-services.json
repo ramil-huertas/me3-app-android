@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "14790027427",
+    "project_id": "me3-wallet-49bd7",
+    "storage_bucket": "me3-wallet-49bd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14790027427:android:78c5e0edfde82dbf713716",
+        "android_client_info": {
+          "package_name": "app.me3.crypto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14790027427-ji6ev9tq5i3uiqpn7t0p5mdg8he4q2nv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.me3.crypto",
+            "certificate_hash": "18fcb4bf792cd6cf30f1d7c01697156b530bacc8"
+          }
+        },
+        {
+          "client_id": "14790027427-57jr5dve7qa2vgsposh69elqrts6bot6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAggkW9VEHn8GItPOeAY9OcF-Baaf3C-VI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14790027427-57jr5dve7qa2vgsposh69elqrts6bot6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
