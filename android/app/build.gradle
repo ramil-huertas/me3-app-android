@@ -137,9 +137,7 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
-        applicationId "app.me3.crypto"
-       // applicationId "app.me3.crypto.preprod"
-      //  applicationId "app.me3.crypto.prod"
+        applicationId "com.android.me3.wallet"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -219,14 +217,14 @@ android {
         debug {
             storeFile file('debug.keystore')
             storePassword 'android'
-            keyAlias 'me3debugkey'
+            keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
         release {
-            storeFile file('release.keystore')
-            storePassword 'android'
-            keyAlias 'me3key'
-            keyPassword 'android'
+            storeFile file('me3_keystore.jks')
+            storePassword 'Auto!2345'
+            keyAlias 'me3_keystore'
+            keyPassword 'Auto!2345'
         }
     }
     buildTypes {
@@ -245,27 +243,18 @@ android {
     productFlavors {
         dev {
             dimension "version"
-            applicationIdSuffix ".dev"
+            applicationIdSuffix ""
             versionName '1.51'
             versionCode 1
             manifestPlaceholders.appName = "Me3dev"
             resValue "string", "app_name", "Me3dev"
 
         }
-        preprod {
-            dimension "version"
-            applicationIdSuffix ".preprod"
-            versionName '1.12'
-            versionCode 1
-            manifestPlaceholders.appName = "Me3PreProd"
-            resValue "string", "app_name", "Me3PreProd"
-//            versionNameSuffix "-full"
-        }
         prod {
             dimension "version"
             applicationIdSuffix ""
-            versionName '1.1.5'
-            versionCode 115
+            versionName '1.1.6'
+            versionCode 116
             manifestPlaceholders.appName = "Me3"
             resValue "string", "app_name", "Me3"
             //            versionNameSuffix "-full"
@@ -290,6 +279,8 @@ android {
 }
 
 dependencies {
+    implementation platform('com.google.firebase:firebase-bom:32.1.0')
+    implementation 'com.google.firebase:firebase-analytics'
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation project(":walletconnect")
   //  implementation "com.trustwallet:wallet-core:3.0.8"
@@ -303,6 +294,7 @@ dependencies {
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
     implementation 'com.android.support:multidex:1.0.0'
     implementation 'com.facebook.fresco:animated-gif:2.5.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:22.0.0'
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.fbjni'
     }

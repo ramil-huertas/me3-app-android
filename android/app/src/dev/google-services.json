@@ -1,41 +1,41 @@
 {
   "project_info": {
-    "project_number": "14790027427",
-    "project_id": "me3-wallet-49bd7",
-    "storage_bucket": "me3-wallet-49bd7.appspot.com"
+    "project_number": "580040504702",
+    "project_id": "me3-wallet-firebase",
+    "storage_bucket": "me3-wallet-firebase.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:14790027427:android:78c5e0edfde82dbf713716",
+        "mobilesdk_app_id": "1:580040504702:android:fdee4c329d064a413caf2f",
         "android_client_info": {
-          "package_name": "app.me3.crypto"
+          "package_name": "app.me3.crypto.dev"
         }
       },
       "oauth_client": [
         {
-          "client_id": "14790027427-ji6ev9tq5i3uiqpn7t0p5mdg8he4q2nv.apps.googleusercontent.com",
+          "client_id": "580040504702-ng6kjb8u5ae7ic1fak6lb8luljtnol69.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "app.me3.crypto",
-            "certificate_hash": "18fcb4bf792cd6cf30f1d7c01697156b530bacc8"
+            "package_name": "app.me3.crypto.dev",
+            "certificate_hash": "3be43ba9ef2b734b4a529181647b23cab809964a"
           }
         },
         {
-          "client_id": "14790027427-57jr5dve7qa2vgsposh69elqrts6bot6.apps.googleusercontent.com",
+          "client_id": "580040504702-befpuej4di5skg6se87ognkvjl63t2au.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAggkW9VEHn8GItPOeAY9OcF-Baaf3C-VI"
+          "current_key": "AIzaSyDhEsWOLgixusRoORL_p-g6HxgBXoEVtNs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "14790027427-57jr5dve7qa2vgsposh69elqrts6bot6.apps.googleusercontent.com",
+              "client_id": "580040504702-befpuej4di5skg6se87ognkvjl63t2au.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -44,35 +44,35 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:14790027427:android:daa29401bc1b7dfc713716",
+        "mobilesdk_app_id": "1:580040504702:android:a53af457985b8a083caf2f",
         "android_client_info": {
-          "package_name": "app.me3.crypto.dev"
+          "package_name": "com.android.me3.wallet"
         }
       },
       "oauth_client": [
         {
-          "client_id": "14790027427-9ibtsist3pu5gnc3ogd00bc88tjf6m42.apps.googleusercontent.com",
+          "client_id": "580040504702-eear2rmfuft43sei5llaq3aftrgje6qo.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "app.me3.crypto.dev",
-            "certificate_hash": "fd34130945e2846204bcfc674fc6e6ab0c0bec71"
+            "package_name": "com.android.me3.wallet",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
           }
         },
         {
-          "client_id": "14790027427-57jr5dve7qa2vgsposh69elqrts6bot6.apps.googleusercontent.com",
+          "client_id": "580040504702-befpuej4di5skg6se87ognkvjl63t2au.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAggkW9VEHn8GItPOeAY9OcF-Baaf3C-VI"
+          "current_key": "AIzaSyDhEsWOLgixusRoORL_p-g6HxgBXoEVtNs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "14790027427-57jr5dve7qa2vgsposh69elqrts6bot6.apps.googleusercontent.com",
+              "client_id": "580040504702-befpuej4di5skg6se87ognkvjl63t2au.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

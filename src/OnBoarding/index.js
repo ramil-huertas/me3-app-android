@@ -72,7 +72,7 @@ import { useFocusEffect } from '@react-navigation/native';
 import { useDispatch, useSelector } from 'react-redux';
 import { setWalletProcessType } from '@redux/Action/WalletStatusAction';
 import { calculateHeight, calculateWidth } from '@constants/theme';
-import { logger } from '@constants/Log';
+// import { console.log } from '@constants/Log';
 import {
     checkNullOrEmpty,
     autoLogoutAfter1Week,
@@ -135,7 +135,7 @@ export default function OnBoarding({ navigation }) {
             });
             return () => {
                 BackHandler.addEventListener('hardwareBackPress', () => {
-                    logger('back pressed return');
+                    console.log('back pressed return');
                 }).remove();
             };
         }, []),
@@ -177,7 +177,7 @@ export default function OnBoarding({ navigation }) {
                     }
                 })
                 .catch(error => {
-                    logger('error supportcurrency', error);
+                    console.log('error supportcurrency', error);
                 });
         } else {
             setCurrentCurrencyFromAction(dispatch, JSON.parse(savedCurrency));
@@ -185,7 +185,7 @@ export default function OnBoarding({ navigation }) {
     }
     useEffect(() => {
         createTables();
-        logger('useeffect cal');
+        console.log('useeffect cal');
         checkPasscodeMode();
         setCurrency();
         apiGetAllChains()
@@ -220,10 +220,10 @@ export default function OnBoarding({ navigation }) {
                             insertChainInTable(item);
                         }
                     })
-                    .catch(error => logger(`delete database error ${error}`));
+                    .catch(error => console.log(`delete database error ${error}`));
             })
             .catch(error => {
-                logger('chain ', error);
+                console.log('chain ', error);
             });
         GoogleSignin.configure({
             scopes: SCOPES,
@@ -232,7 +232,7 @@ export default function OnBoarding({ navigation }) {
         });
 
         GoogleSignin.isSignedIn().then(status => {
-            logger('User signedin status ', status);
+            console.log('User signedin status ', status);
         });
     }, []);
 
@@ -272,8 +272,6 @@ export default function OnBoarding({ navigation }) {
         let fileName = 'ME3_KEY.json';
         if (apiConst.APIENV === APIENVTYPE.DEV) {
             fileName = 'ME3_KEY_DEV.json';
-        } else if (apiConst.APIENV === APIENVTYPE.PREPROD) {
-            fileName = 'ME3_KEY_PRE_PROD.json';
         } else {
             fileName = 'ME3_KEY.json';
         }
@@ -290,7 +288,7 @@ export default function OnBoarding({ navigation }) {
 
                     api_set_fileId(fileData.id)
                         .then(fileId => {
-                            logger('response :: ', fileId);
+                            console.log('response :: ', fileId);
                             setShowIndicatorStatus(false);
                             const object = {
                                 type: string.BACK_UP,
@@ -304,7 +302,7 @@ export default function OnBoarding({ navigation }) {
                         })
                         .catch(error => {
                             setShowIndicatorStatus(false);
-                            logger('uplaod file error :: ', error);
+                            console.log('uplaod file error :: ', error);
                         });
                     // navigation.replace("Welcome")
                 })
@@ -315,7 +313,7 @@ export default function OnBoarding({ navigation }) {
                         dispatch,
                         'File saved failed. Please try again',
                     );
-                    logger('error', JSON.stringify(error));
+                    console.log('error', JSON.stringify(error));
                 });
         });
     }
@@ -327,6 +325,7 @@ export default function OnBoarding({ navigation }) {
     function googleSignIn() {
         GoogleSignin.signIn()
             .then(userInfo => {
+                console.log("=======Google Sign In========")
                 if (userInfo && userInfo.user.email != null) {
                     saveKeyValueData(
                         storageConst.CURRENT_USER_EMAIL,
@@ -338,7 +337,7 @@ export default function OnBoarding({ navigation }) {
                  *       saveKeyValueData(storageConst.ACCESS_TOKEN, data.accessToken)
                  *       setShowIndicatorStatus(true)
                  *       uploadFile(idtoken.accessToken)
-                 *   }).catch(error => logger(error))
+                 *   }).catch(error => console.log(error))
                  **/
 
                 GoogleSignin.getTokens().then(idtoken => {
@@ -360,8 +359,7 @@ export default function OnBoarding({ navigation }) {
                         key: () => googleSignIn(),
                     });
 
-                logger(e);
-                logger('sign in ERROR IS: ' + JSON.stringify(e));
+                console.log('sign in ERROR IS: ' + JSON.stringify(e));
             });
     }
 
@@ -376,7 +374,7 @@ export default function OnBoarding({ navigation }) {
     };
 
     const encryption = async email => {
-        logger('encryption start time ::', new Date().toString());
+        console.log('encryption start time ::', new Date().toString());
         let rsaKeyPair1 = pki.rsa.generateKeyPair({
             bits: 1024,
             e: 0x10001,
@@ -386,7 +384,7 @@ export default function OnBoarding({ navigation }) {
         setShowIndicatorStatus(false);
         const privateKeyEncoded = key2B64Str(rsaKeyPair1.privateKey, true);
         const publicKeyEncoded = key2B64Str(rsaKeyPair1.publicKey, false);
-        logger('encryption end time ::', new Date().toString());
+        console.log('encryption end time ::', new Date().toString());
 
         saveKeyValueData(storageConst.CLIENT_PUBLICKEY, publicKeyEncoded);
         saveKeyValueData(storageConst.CLIENT_PRIVATEKEY, privateKeyEncoded);
@@ -425,7 +423,7 @@ export default function OnBoarding({ navigation }) {
                                     uploadFile(JSON.stringify(fileObject));
                                 })
                                 .catch(error => {
-                                    logger('error', error);
+                                    console.log('error', error);
                                 });
                         } else {
                             let token1 = parsedDecryptedData.token;
@@ -467,33 +465,33 @@ export default function OnBoarding({ navigation }) {
                                                 }
                                             })
                                             .catch(error => {
-                                                logger(
+                                                console.log(
                                                     'database error ',
                                                     error,
                                                 );
                                             });
-                                        logger(data);
+                                        console.log(data);
                                     })
                                     .catch(error => {
                                         logout();
                                         setShowIndicatorStatus(false);
-                                        logger(error);
+                                        console.log(error);
                                     });
                             } else {
-                                logger('neither uid, salt or token found');
+                                console.log('neither uid, salt or token found');
                             }
                         }
                     })
                     .catch(error => {
                         logout();
                         setShowIndicatorStatus(false);
-                        logger(error);
+                        console.log(error);
                     });
             })
             .catch(error => {
                 logout();
                 setShowIndicatorStatus(false);
-                logger(error);
+                console.log(error);
             });
     };
 
@@ -517,7 +515,7 @@ export default function OnBoarding({ navigation }) {
                     getAllWallets()
                         .then(data => {
                             let length = data.rows.length;
-                            logger('Method ', data.rows.length);
+                            console.log('Method ', data.rows.length);
 
                             if (length == 0) {
                                 api_set_fileId()
@@ -544,13 +542,13 @@ export default function OnBoarding({ navigation }) {
                             }
                         })
                         .catch(error => {
-                            logger('database error ', error);
+                            console.log('database error ', error);
                         });
                 });
             })
             .catch(e => {
                 setShowIndicatorStatus(false);
-                logger('sign in ERROR IS: ' + JSON.stringify(e));
+                console.log('sign in ERROR IS: ' + JSON.stringify(e));
             });
     }
 
@@ -595,7 +593,7 @@ export default function OnBoarding({ navigation }) {
                         },
                     )}
                     onScrollToIndexFailed={event => {
-                        logger('scroll to index failed :: ', event);
+                        console.log('scroll to index failed :: ', event);
                     }}
                 />
 
@@ -644,7 +642,7 @@ export default function OnBoarding({ navigation }) {
                             .then(hasPlayService => {
                                 if (hasPlayService) {
                                     GoogleSignin.isSignedIn().then(status => {
-                                        logger('User signedin status ', status);
+                                        console.log('User signedin status ', status);
                                         if (!status) {
                                             googleSignIn();
                                         } else {
@@ -652,11 +650,11 @@ export default function OnBoarding({ navigation }) {
                                         }
                                     });
                                 } else {
-                                    logger('no play service available');
+                                    console.log('no play service available');
                                 }
                             })
                             .catch(e => {
-                                logger('ERROR IS: ' + JSON.stringify(e));
+                                console.log('ERROR IS: ' + JSON.stringify(e));
                             });
                     }}>
                     <Image

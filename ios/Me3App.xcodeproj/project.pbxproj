@@ -637,7 +637,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "app.me3.crypto-dev";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.me3.wallet-dev";
 				PRODUCT_NAME = Me3App;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Me3App-Bridging-Header.h";
@@ -672,7 +672,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "app.me3.crypto-dev";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.me3.wallet-dev";
 				PRODUCT_NAME = Me3App;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Me3App-Bridging-Header.h";

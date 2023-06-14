@@ -54,7 +54,7 @@ const UpdateVersion = () => {
                     onPress={() => {
                         VersionCheck.getPlayStoreUrl({
                             packageName: VersionCheck.getPackageName(),
-                            // packageName: `app.me3.crypto`
+                            // packageName: `com.me3.wallet`
                         })
                             .then(storeUrl => {
                                 Linking.openURL(storeUrl);
