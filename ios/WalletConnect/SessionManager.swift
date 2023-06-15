@@ -1,6 +1,6 @@
 //
 //  SessionManager.swift
-//  Me3App
+//  me3app
 //
 //  Created by plusinfosys on 29/12/22.
 //

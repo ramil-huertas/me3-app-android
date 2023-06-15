@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "Me3App.app"
-               BlueprintName = "Me3App"
-               ReferencedContainer = "container:Me3App.xcodeproj">
+               BuildableName = "me3app.app"
+               BlueprintName = "me3app"
+               ReferencedContainer = "container:me3app.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "Me3AppTests.xctest"
-               BlueprintName = "Me3AppTests"
-               ReferencedContainer = "container:Me3App.xcodeproj">
+               BuildableName = "me3appTests.xctest"
+               BlueprintName = "me3appTests"
+               ReferencedContainer = "container:me3app.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Me3App.app"
-            BlueprintName = "Me3App"
-            ReferencedContainer = "container:Me3App.xcodeproj">
+            BuildableName = "me3app.app"
+            BlueprintName = "me3app"
+            ReferencedContainer = "container:me3app.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Me3App.app"
-            BlueprintName = "Me3App"
-            ReferencedContainer = "container:Me3App.xcodeproj">
+            BuildableName = "me3app.app"
+            BlueprintName = "me3app"
+            ReferencedContainer = "container:me3app.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

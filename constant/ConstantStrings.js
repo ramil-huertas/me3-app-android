@@ -71,7 +71,7 @@ module.exports = {
     WalletSettings: 'Wallet Settings',
     Managewallets: 'Manage wallets',
     Security: 'Security',
-    BackupMe3wallets: 'Back-up Me3 wallets',
+    Backupme3apps: 'Back-up Me3 wallets',
     Currency: 'Currency',
     IDR: 'IDR',
     Followuson: 'Follow us on',

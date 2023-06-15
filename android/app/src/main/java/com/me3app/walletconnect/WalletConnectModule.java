@@ -21,10 +21,6 @@ import com.trustwallet.walletconnect.WCClient;
 import com.trustwallet.walletconnect.WCSessionStoreItem;
 import com.trustwallet.walletconnect.WCSessionStoreType;
 import com.trustwallet.walletconnect.models.WCPeerMeta;
-import com.trustwallet.walletconnect.models.WCSignTransaction;
-import com.trustwallet.walletconnect.models.ethereum.WCEthereumSignMessage;
-import com.trustwallet.walletconnect.models.ethereum.WCEthereumTransaction;
-import com.trustwallet.walletconnect.models.session.WCAddNetwork;
 import com.trustwallet.walletconnect.models.session.WCSession;
 
 import org.json.JSONException;
@@ -37,9 +33,6 @@ import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
-import kotlin.Unit;
-import kotlin.jvm.functions.Function1;
-import kotlin.jvm.functions.Function2;
 import okhttp3.OkHttpClient;
 
 public class WalletConnectModule extends ReactContextBaseJavaModule {

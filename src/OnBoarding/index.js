@@ -245,7 +245,7 @@ export default function OnBoarding({ navigation }) {
     const keyExtractor = React.useCallback((_, index) => index.toString(), []);
     const [activeIndex, setActiveIndex] = React.useState(0);
     let flatListRef = React.useRef(null);
-    const onViewRef = React.useRef(({ viewableItems }: any) => {
+    const onViewRef = React.useRef(({ viewableItems }) => {
         setActiveIndex(viewableItems[0].index);
     });
     const viewConfigRef = React.useRef({

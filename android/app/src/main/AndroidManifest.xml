@@ -38,7 +38,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>
-                <data android:host="onboard" android:scheme="me3wallet"/>
+                <data android:host="onboard" android:scheme="me3app"/>
             </intent-filter>
         </activity>
 

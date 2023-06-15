@@ -386,7 +386,7 @@ export default function Setting({ navigation }) {
             timeOfClick: new Date().toLocaleString(),
         };
         firebaseAnalytics(firebaseEvents.settings_twitter, eventObject);
-        Linking.openURL('https://twitter.com/me3wallet');
+        Linking.openURL('https://twitter.com/me3app');
     }
 
     function linkedInClieckEvent() {
@@ -394,7 +394,7 @@ export default function Setting({ navigation }) {
             timeOfClick: new Date().toLocaleString(),
         };
         firebaseAnalytics(firebaseEvents.settings_linkedin, eventObject);
-        Linking.openURL('https://www.linkedin.com/company/me3wallet/');
+        Linking.openURL('https://www.linkedin.com/company/me3app/');
     }
 
     function InstagramClickEvent() {
@@ -402,7 +402,7 @@ export default function Setting({ navigation }) {
             timeOfClick: new Date().toLocaleString(),
         };
         firebaseAnalytics(firebaseEvents.settings_instagram, eventObject);
-        Linking.openURL('https://www.instagram.com/me3wallet/');
+        Linking.openURL('https://www.instagram.com/me3app/');
     }
 
     function privacyClickEvent() {

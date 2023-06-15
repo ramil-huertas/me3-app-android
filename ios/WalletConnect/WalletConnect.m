@@ -1,13 +1,13 @@
 //
 //  WalletConnect.m
-//  Me3App
+//  me3app
 //
 //  Created by Plusinfosys on 22/12/22.
 //
 
 #import <Foundation/Foundation.h>
 #import "WalletConnect.h"
-#import "Me3App-Swift.h"
+#import "me3app-Swift.h"
 
 @implementation WalletConnect {
   WalletConnectManager *walletConnectObj;

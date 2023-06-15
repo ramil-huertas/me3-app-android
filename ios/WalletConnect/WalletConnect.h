@@ -1,6 +1,6 @@
 //
 //  WalletConnect.h
-//  Me3App
+//  me3app
 //
 //  Created by Plusinfosys on 22/12/22.
 //
