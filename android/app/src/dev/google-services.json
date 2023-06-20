@@ -1,43 +1,110 @@
 {
   "project_info": {
-    "project_number": "345269548940",
-    "firebase_url": "https://me3app-389803-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "me3app-389803",
-    "storage_bucket": "me3app-389803.appspot.com"
+    "project_number": "139382158465",
+    "firebase_url": "https://me3-app-eb745-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "me3-app-eb745",
+    "storage_bucket": "me3-app-eb745.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:345269548940:android:f077ae94a74b14c4be88a9",
+        "mobilesdk_app_id": "1:139382158465:android:d59a7c2e20feb4fc3f4980",
         "android_client_info": {
-          "package_name": "com.android.me3.app"
+          "package_name": "app.me3.crypto"
         }
       },
       "oauth_client": [
         {
-          "client_id": "345269548940-oqbmvj166q5ut58kgb9nm4oi6eb4tpmt.apps.googleusercontent.com",
+          "client_id": "139382158465-1uj23al80ok51afq098cocstr174r9ve.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.android.me3.app",
-            "certificate_hash": "3be43ba9ef2b734b4a529181647b23cab809964a"
+            "package_name": "app.me3.crypto",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
           }
         },
         {
-          "client_id": "345269548940-me56f837rd87bvk75ijgrdh5m521mcvh.apps.googleusercontent.com",
+          "client_id": "139382158465-d8v7i3qacbil00m5eio09snlopubec93.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.me3.crypto",
+            "certificate_hash": "97fa7163764c53466b2089e505b509a98ace647c"
+          }
+        },
+        {
+          "client_id": "139382158465-paejpev71ghv6oa8ptris2tb4q8r0858.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB7bjVjf8p68-TsE73_CVMPFrMplt1jsyg"
+          "current_key": "AIzaSyBDq0YPZpCubn8zdYfJwr4Ei_b-iP-lIX8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "345269548940-me56f837rd87bvk75ijgrdh5m521mcvh.apps.googleusercontent.com",
+              "client_id": "139382158465-paejpev71ghv6oa8ptris2tb4q8r0858.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "139382158465-p7l1f8uu8der2m8hoqmg1n3jd0s8t1j9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "app.me3.crypto.dev"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139382158465:android:37d67c0ab6bb2c2a3f4980",
+        "android_client_info": {
+          "package_name": "app.me3.wallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139382158465-fpj3qhngbr7rnrpsimeajauphrik2nk2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.me3.wallet",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "139382158465-rns6c3fp0fqifrr6rrl1vuvmijvma1gl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.me3.wallet",
+            "certificate_hash": "471a9cc616dfca4c15d3c879493538a8efcabe13"
+          }
+        },
+        {
+          "client_id": "139382158465-paejpev71ghv6oa8ptris2tb4q8r0858.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDq0YPZpCubn8zdYfJwr4Ei_b-iP-lIX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139382158465-paejpev71ghv6oa8ptris2tb4q8r0858.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "139382158465-p7l1f8uu8der2m8hoqmg1n3jd0s8t1j9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "app.me3.crypto.dev"
+              }
             }
           ]
         }
