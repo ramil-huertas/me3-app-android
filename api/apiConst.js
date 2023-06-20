@@ -4,11 +4,11 @@ export const APIENVTYPE = {
 };
 
 const endpoints = {
-    // BASE_URL: 'https://wallet.me3.io/me3-api', // prod
-    // APIENV: APIENVTYPE.PROD,
+    BASE_URL: 'https://wallet.me3.io/me3-api', // prod
+    APIENV: APIENVTYPE.PROD,
     
-    BASE_URL: 'https://new-dev-backend.me3.io/me3-api', //dev
-    APIENV: APIENVTYPE.DEV,
+    // BASE_URL: 'https://new-dev-backend.me3.io/me3-api', //dev
+    // APIENV: APIENVTYPE.DEV,
 
     GET_ACCESS_TOKEN: '/api/gameInfo/googleCode',
     SET_GET_DRIVE_FILE_ID: '/api/light/userfileId',
