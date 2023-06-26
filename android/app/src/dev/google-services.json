@@ -8,64 +8,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:139382158465:android:d59a7c2e20feb4fc3f4980",
-        "android_client_info": {
-          "package_name": "app.me3.crypto"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "139382158465-1uj23al80ok51afq098cocstr174r9ve.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "app.me3.crypto",
-            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
-          }
-        },
-        {
-          "client_id": "139382158465-d8v7i3qacbil00m5eio09snlopubec93.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "app.me3.crypto",
-            "certificate_hash": "97fa7163764c53466b2089e505b509a98ace647c"
-          }
-        },
-        {
-          "client_id": "139382158465-paejpev71ghv6oa8ptris2tb4q8r0858.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBDq0YPZpCubn8zdYfJwr4Ei_b-iP-lIX8"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "139382158465-paejpev71ghv6oa8ptris2tb4q8r0858.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "139382158465-p7l1f8uu8der2m8hoqmg1n3jd0s8t1j9.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "app.me3.crypto.dev"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:139382158465:android:37d67c0ab6bb2c2a3f4980",
         "android_client_info": {
           "package_name": "app.me3.wallet"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "139382158465-9ijkudlgik0geoobrq5po4b5bgig4qdr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.me3.wallet",
+            "certificate_hash": "97fa7163764c53466b2089e505b509a98ace647c"
+          }
+        },
         {
           "client_id": "139382158465-fpj3qhngbr7rnrpsimeajauphrik2nk2.apps.googleusercontent.com",
           "client_type": 1,
@@ -100,10 +56,10 @@
               "client_type": 3
             },
             {
-              "client_id": "139382158465-p7l1f8uu8der2m8hoqmg1n3jd0s8t1j9.apps.googleusercontent.com",
+              "client_id": "139382158465-a0vdiqj48v82i571kdeem62815v9p48b.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "app.me3.crypto.dev"
+                "bundle_id": "app.me3.wallet"
               }
             }
           ]

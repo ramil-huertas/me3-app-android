@@ -67,7 +67,6 @@ async function getRequestParams(obj) {
 }
 
 export const axiosGETRequest = async (url, params) => {
-    logger(params);
     const header = await getHeader();
     const config = {
         method: 'get',

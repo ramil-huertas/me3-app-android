@@ -163,8 +163,6 @@ const SplashScreen = () => {
     }, []);
 
     useEffect(() => {
-        logger(new Date());
-
         checkBackupStatus();
         createTables();
         setCurrency();

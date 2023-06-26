@@ -259,8 +259,8 @@ android {
         prod {
             dimension "version"
             applicationIdSuffix ""
-            versionName '1.0.0'
-            versionCode 100
+            versionName '1.2.2'
+            versionCode 122
             manifestPlaceholders.appName = "Me3"
             resValue "string", "app_name", "Me3"
             //            versionNameSuffix "-full"
